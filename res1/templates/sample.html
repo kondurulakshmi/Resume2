@@ -1,0 +1,21 @@
+<form name="myform6" id="myform6" method="POST">
+{% csrf_token %}
+<table><tr><td>Full name:   {{fullname}}</td></tr>         <br>           <tr><td>Mail Id: {{mailing}}</td></tr></table>
+
+<h3>EDUCATIONAL DETAILS:</h3>
+_______________________________________________
+   <table type="hidden"><tr><td>qualification :</td><td> {{qua}} </td></tr>
+   <tr><td>university :</td><td> {{univ}} </td></tr>
+   <tr><td>Year of passing :</td><td> {{year}} </td></tr>
+   <tr><td>Percentage : </td><td>{{perc}} </td></tr></table>
+_______________________________________________
+<h3>PROFESSIONAL DETAILS:</h3>
+_______________________________________________
+   <table><tr><td>Job type: </td><td>{{job}} </td></tr>
+   <tr><td>Total Experience: </td><td>{{exp}} </td></tr>
+   <tr><td>Current Industry:</td><td> {{ind}} </td></tr>
+   <tr><td>Functional Area: {{fun}} </td></tr>
+   <tr><td>Key Skills: {{key}} </td></tr></table> 
+
+<center><input type="button" value="Download as PDF" id="pdf1" name="pdf1"></center>
+</form>
